@@ -12,5 +12,6 @@
 
 void displayAsciiCode(void);
 void toRename(void);
+void divideNumbers(void);
 
 #endif /* chapter4exercice_h */

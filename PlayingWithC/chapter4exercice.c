@@ -27,3 +27,23 @@ void toRename(void) {
     printf("\n");
     printf("\n");
 }
+
+void divideNumbers(void) {
+    int n1, n2;
+    puts("Enter two different integers separated by a space");
+    scanf("%d %d", &n1, &n2);
+    
+    int quotien = n1 / n2;
+    int remainder = n1 % n2;
+    printf("quotient of n1 / n2 = %d \n", quotien);
+    printf("remainder of n1 / n2 = %d \n", remainder);
+    
+    int l;
+    printf("enter a third number \n");
+    scanf("%d", &l);
+    int res = (l * remainder) % 256;
+    printf("res = %d \n", res);
+    char charValue = res+'0';
+    printf("charValue = %c \n", charValue);
+    
+}

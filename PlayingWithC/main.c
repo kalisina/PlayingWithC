@@ -50,7 +50,8 @@ int main(int argc, const char * argv[]) {
     
     //displayText(); // lesson 4
     //displayAsciiCode(); // exe 4.1
-    toRename();
+    //toRename();
+    divideNumbers(); // exe 4.2
     
     //rationalNumberMaker(); // exe 7.1
     //panelMaker(); // exe 7.2
