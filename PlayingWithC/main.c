@@ -11,6 +11,7 @@
 #include "chapter3exercice.h"
 #include "chapter4.h"
 #include "chapter4exercice.h"
+#include "chapter5exercice.h"
 #include "chapter7exercice.h"
 #include "pointers.h"
 
@@ -51,7 +52,9 @@ int main(int argc, const char * argv[]) {
     //displayText(); // lesson 4
     //displayAsciiCode(); // exe 4.1
     //toRename();
-    divideNumbers(); // exe 4.2
+    //divideNumbers(); // exe 4.2
+    
+    ascendingNumbers(); // exe 5.1
     
     //rationalNumberMaker(); // exe 7.1
     //panelMaker(); // exe 7.2

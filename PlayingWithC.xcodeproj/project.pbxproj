@@ -15,6 +15,7 @@
 		5FB7D90127145DE0004F0A12 /* chapter2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7D90027145DE0004F0A12 /* chapter2.c */; };
 		5FB7D904271460CF004F0A12 /* chapter2exercice.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7D903271460CF004F0A12 /* chapter2exercice.c */; };
 		5FC97089276A10DD0080F297 /* pointers.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FC97088276A10DD0080F297 /* pointers.c */; };
+		5FCE002F2808AB5500D56D92 /* chapter5exercice.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FCE002E2808AB5500D56D92 /* chapter5exercice.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		5FB7D903271460CF004F0A12 /* chapter2exercice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapter2exercice.c; sourceTree = "<group>"; };
 		5FC97087276A10DD0080F297 /* pointers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pointers.h; sourceTree = "<group>"; };
 		5FC97088276A10DD0080F297 /* pointers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pointers.c; sourceTree = "<group>"; };
+		5FCE002D2808AB5500D56D92 /* chapter5exercice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter5exercice.h; sourceTree = "<group>"; };
+		5FCE002E2808AB5500D56D92 /* chapter5exercice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapter5exercice.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				5F35429627160F43007EEA75 /* chapter4.c */,
 				5F35429827161B91007EEA75 /* chapter4exercice.h */,
 				5F35429927161B91007EEA75 /* chapter4exercice.c */,
+				5FCE002D2808AB5500D56D92 /* chapter5exercice.h */,
+				5FCE002E2808AB5500D56D92 /* chapter5exercice.c */,
 				5FB244B1275E998F004586FB /* chapter7exercice.h */,
 				5FB244B2275E998F004586FB /* chapter7exercice.c */,
 			);
@@ -157,6 +162,7 @@
 				5F35429727160F43007EEA75 /* chapter4.c in Sources */,
 				5FB7D904271460CF004F0A12 /* chapter2exercice.c in Sources */,
 				5F35429A27161B91007EEA75 /* chapter4exercice.c in Sources */,
+				5FCE002F2808AB5500D56D92 /* chapter5exercice.c in Sources */,
 				5F3542942716002D007EEA75 /* chapter3exercice.c in Sources */,
 				5FB7D90127145DE0004F0A12 /* chapter2.c in Sources */,
 				5FB244B3275E998F004586FB /* chapter7exercice.c in Sources */,
