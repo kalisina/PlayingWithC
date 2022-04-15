@@ -54,13 +54,13 @@ int main(int argc, const char * argv[]) {
     //toRename();
     //divideNumbers(); // exe 4.2
     
-    ascendingNumbers(); // exe 5.1
+    //ascendingNumbers(); // exe 5.1
     
     //rationalNumberMaker(); // exe 7.1
     //panelMaker(); // exe 7.2
     //productMaker(); // exe 7.3
     
     
-    //testingPointers();
+    testingPointers();
     return 0;
 }

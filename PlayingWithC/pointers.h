@@ -11,5 +11,6 @@
 #include <stdio.h>
 
 void testingPointers(void);
+void inverseNumbers(int* number1,int* number2);
 
 #endif /* pointers_h */
