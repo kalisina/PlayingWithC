@@ -52,10 +52,21 @@ void testingPointers(void) {
     printf("numberA = %d and numberB = %d \n", numberA, numberB);
     inverseNumbers(numberAPointer, numberBPointer);
     printf("New value of numberA = %d and numberB = %d \n", numberA, numberB);
+    
+    puts("");
+    int numberC = 9;
+    printf("numberC = %d \n", numberC);
+    changeNumber(&numberC);
+    printf("after change - numberC = %d \n", numberC);
+    
 }
 
 void inverseNumbers(int* numberA,int* numberB) {
     int temp = *numberA;
     *numberA = *numberB;
     *numberB = temp;
+}
+
+void changeNumber(int* myNumber) {
+    *myNumber = *myNumber * 3;
 }

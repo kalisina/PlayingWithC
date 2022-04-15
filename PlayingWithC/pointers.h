@@ -12,5 +12,6 @@
 
 void testingPointers(void);
 void inverseNumbers(int* number1,int* number2);
+void changeNumber(int* myNumber);
 
 #endif /* pointers_h */
