@@ -13,6 +13,7 @@
 #include "chapter4exercice.h"
 #include "chapter5exercice.h"
 #include "chapter7exercice.h"
+#include "chapter9exercice.h"
 #include "pointers.h"
 
 void switchNumbers(int a, int b) {
@@ -60,7 +61,8 @@ int main(int argc, const char * argv[]) {
     //panelMaker(); // exe 7.2
     //productMaker(); // exe 7.3
     
+    hello(); // exe 9
     
-    testingPointers();
+    //testingPointers();
     return 0;
 }
