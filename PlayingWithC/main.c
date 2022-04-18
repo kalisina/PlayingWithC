@@ -61,7 +61,7 @@ int main(int argc, const char * argv[]) {
     //panelMaker(); // exe 7.2
     //productMaker(); // exe 7.3
     
-    hello(); // exe 9
+    createArrayOfIntegers(); // exe 9.1
     
     //testingPointers();
     return 0;
