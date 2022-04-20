@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F06FF3528100C9100D22329 /* arrays.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F06FF3428100C9100D22329 /* arrays.c */; };
 		5F336D0A280DD4B2008CADEF /* chapter9exercice.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F336D09280DD4B2008CADEF /* chapter9exercice.c */; };
 		5F3542942716002D007EEA75 /* chapter3exercice.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F3542932716002D007EEA75 /* chapter3exercice.c */; };
 		5F35429727160F43007EEA75 /* chapter4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F35429627160F43007EEA75 /* chapter4.c */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F06FF3328100C9100D22329 /* arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrays.h; sourceTree = "<group>"; };
+		5F06FF3428100C9100D22329 /* arrays.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arrays.c; sourceTree = "<group>"; };
 		5F336D08280DD4B2008CADEF /* chapter9exercice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter9exercice.h; sourceTree = "<group>"; };
 		5F336D09280DD4B2008CADEF /* chapter9exercice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapter9exercice.c; sourceTree = "<group>"; };
 		5F3542922716002D007EEA75 /* chapter3exercice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter3exercice.h; sourceTree = "<group>"; };
@@ -65,6 +68,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F06FF3628100CB600D22329 /* Concept */ = {
+			isa = PBXGroup;
+			children = (
+				5F06FF3328100C9100D22329 /* arrays.h */,
+				5F06FF3428100C9100D22329 /* arrays.c */,
+				5FC97087276A10DD0080F297 /* pointers.h */,
+				5FC97088276A10DD0080F297 /* pointers.c */,
+			);
+			path = Concept;
+			sourceTree = "<group>";
+		};
 		5FB7D8EC271459EE004F0A12 = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				5FB7D8F8271459EE004F0A12 /* main.c */,
-				5FC97087276A10DD0080F297 /* pointers.h */,
-				5FC97088276A10DD0080F297 /* pointers.c */,
 				5FB7D8FF27145DE0004F0A12 /* chapter2.h */,
 				5FB7D90027145DE0004F0A12 /* chapter2.c */,
 				5FB7D902271460CF004F0A12 /* chapter2exercice.h */,
@@ -99,6 +111,7 @@
 				5F35429927161B91007EEA75 /* chapter4exercice.c */,
 				5FCE002D2808AB5500D56D92 /* chapter5exercice.h */,
 				5FCE002E2808AB5500D56D92 /* chapter5exercice.c */,
+				5F06FF3628100CB600D22329 /* Concept */,
 				5FB244B1275E998F004586FB /* chapter7exercice.h */,
 				5FB244B2275E998F004586FB /* chapter7exercice.c */,
 				5F336D08280DD4B2008CADEF /* chapter9exercice.h */,
@@ -166,6 +179,7 @@
 			files = (
 				5F35429727160F43007EEA75 /* chapter4.c in Sources */,
 				5FB7D904271460CF004F0A12 /* chapter2exercice.c in Sources */,
+				5F06FF3528100C9100D22329 /* arrays.c in Sources */,
 				5F35429A27161B91007EEA75 /* chapter4exercice.c in Sources */,
 				5F336D0A280DD4B2008CADEF /* chapter9exercice.c in Sources */,
 				5FCE002F2808AB5500D56D92 /* chapter5exercice.c in Sources */,

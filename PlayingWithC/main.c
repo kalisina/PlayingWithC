@@ -15,6 +15,7 @@
 #include "chapter7exercice.h"
 #include "chapter9exercice.h"
 #include "pointers.h"
+#include "arrays.h"
 
 void switchNumbers(int a, int b) {
     puts("switchNumbers");
@@ -61,8 +62,10 @@ int main(int argc, const char * argv[]) {
     //panelMaker(); // exe 7.2
     //productMaker(); // exe 7.3
     
-    createArrayOfIntegers(); // exe 9.1
+    //createArrayOfIntegers(); // exe 9.1
+    
     
     //testingPointers();
+    testingArray();
     return 0;
 }
