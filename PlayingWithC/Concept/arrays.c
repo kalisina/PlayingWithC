@@ -80,7 +80,22 @@ void ratingCounters(void) {
     for (int i = 0; i < 11; i++) {
         printf("%4d %14d \n", i, ratingCounters[i]);
     }
+}
+
+void fibonacci(void) {
+    /*
+     f(0) = 0;
+     F(1) = 1;
+     F(n) = F(n-1) + F(n-2) where n >= 2
+    */
     
+    unsigned long int fibonacciNumbers[50] = {0}; // init all values to 0
+    fibonacciNumbers[1] = 1; // F(1) = 1
     
-    // 4 - asign a value to the array for each data recorded
+    for (int i = 0; i < 50; i++) {
+        if (i >= 2) {
+            fibonacciNumbers[i] = fibonacciNumbers[i-1] + fibonacciNumbers[i-2];
+        }
+        printf("F(%d) = %lu \n", i, fibonacciNumbers[i]);
+    }
 }

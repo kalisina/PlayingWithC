@@ -12,5 +12,6 @@
 
 void testingArray(void);
 void ratingCounters(void);
+void fibonacci(void);
 
 #endif /* arrays_h */

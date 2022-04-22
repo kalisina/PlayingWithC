@@ -67,6 +67,7 @@ int main(int argc, const char * argv[]) {
     
     //testingPointers();
     //testingArray();
-    ratingCounters();
+    //ratingCounters();
+    fibonacci();
     return 0;
 }
