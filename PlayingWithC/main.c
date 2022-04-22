@@ -66,6 +66,7 @@ int main(int argc, const char * argv[]) {
     
     
     //testingPointers();
-    testingArray();
+    //testingArray();
+    ratingCounters();
     return 0;
 }

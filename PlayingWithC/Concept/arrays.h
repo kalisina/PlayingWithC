@@ -11,5 +11,6 @@
 #include <stdio.h>
 
 void testingArray(void);
+void ratingCounters(void);
 
 #endif /* arrays_h */
