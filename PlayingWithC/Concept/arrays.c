@@ -125,7 +125,7 @@ void primeNumbers(void) {
                 break;
             }
             
-            if (ceil(squareRoot) < primeNumbers[j]) { // we don't need to check for values greater than the sqrt of j
+            if (ceil(squareRoot) < primeNumbers[j]) { // we don't need to check for values greater than the sqrt of i
                 break;
             }
         }
