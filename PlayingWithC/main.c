@@ -68,6 +68,7 @@ int main(int argc, const char * argv[]) {
     //testingPointers();
     //testingArray();
     //ratingCounters();
-    fibonacci();
+    //fibonacci();
+    primeNumbers();
     return 0;
 }

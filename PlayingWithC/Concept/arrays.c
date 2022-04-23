@@ -99,3 +99,44 @@ void fibonacci(void) {
         printf("F(%d) = %lu \n", i, fibonacciNumbers[i]);
     }
 }
+
+void primeNumbers(void) {
+    unsigned int n = 1000;
+    unsigned int isPrimeNumber;
+    unsigned int primeNumbers[1000] = {0};
+    primeNumbers[0] = 2;
+    
+    // need size and position to insert value to the array
+    unsigned int primeNumbersLength = 1;
+    unsigned int position = 1;
+    
+    
+    for (int i = 3; i < n; i++) {
+        
+        isPrimeNumber = 1; // reset the value
+        
+        //for (int j = 0; j < primeNumbersLength; j++) {
+        for (int j = 0; j < primeNumbersLength; j++) {
+            if (i % primeNumbers[j] == 0) {
+                printf("%d can be divided by %d, so it's not a prime number \n", i, primeNumbers[j]);
+                isPrimeNumber = 0;
+                break;
+            }
+        }
+        
+        if (isPrimeNumber) {
+            printf("Congratulations, you've found a new prime number %d \n", i);
+            primeNumbers[position] = i;
+            position ++;
+            primeNumbersLength ++;
+            printf("position is now : %d \n", position);
+        }
+        
+    }
+    
+    printf("List of prime numbers < %d \n", n);
+    printf("----------------------------");
+    for (int i = 0; i < primeNumbersLength; i++) {
+        printf("%d \n", primeNumbers[i]);
+    }
+}

@@ -13,5 +13,6 @@
 void testingArray(void);
 void ratingCounters(void);
 void fibonacci(void);
+void primeNumbers(void);
 
 #endif /* arrays_h */
