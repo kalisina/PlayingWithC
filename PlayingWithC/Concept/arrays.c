@@ -6,6 +6,7 @@
 //
 
 #include "arrays.h"
+#include <math.h>
 
 void showArray(int *arr, int length); // mandatory declaration 
 
@@ -101,9 +102,9 @@ void fibonacci(void) {
 }
 
 void primeNumbers(void) {
-    unsigned int n = 1000;
+    unsigned int n = 1000000;
     unsigned int isPrimeNumber;
-    unsigned int primeNumbers[1000] = {0};
+    unsigned int primeNumbers[1000000] = {0};
     primeNumbers[0] = 2;
     
     // need size and position to insert value to the array
@@ -115,28 +116,32 @@ void primeNumbers(void) {
         
         isPrimeNumber = 1; // reset the value
         
-        //for (int j = 0; j < primeNumbersLength; j++) {
+        double squareRoot = sqrt(i);
+        //printf("square root of %d = %f \n", i, ceil(squareRoot));
+        
         for (int j = 0; j < primeNumbersLength; j++) {
             if (i % primeNumbers[j] == 0) {
-                printf("%d can be divided by %d, so it's not a prime number \n", i, primeNumbers[j]);
                 isPrimeNumber = 0;
+                break;
+            }
+            
+            if (ceil(squareRoot) < primeNumbers[j]) { // we don't need to check for values greater than the sqrt of j
                 break;
             }
         }
         
         if (isPrimeNumber) {
-            printf("Congratulations, you've found a new prime number %d \n", i);
             primeNumbers[position] = i;
             position ++;
             primeNumbersLength ++;
-            printf("position is now : %d \n", position);
         }
         
     }
     
-    printf("List of prime numbers < %d \n", n);
+    printf("List of prime numbers < %d\n", n);
     printf("----------------------------");
     for (int i = 0; i < primeNumbersLength; i++) {
         printf("%d \n", primeNumbers[i]);
     }
+    printf("There is %d primeNumbers between 1 and %d\n", primeNumbersLength, n);
 }
