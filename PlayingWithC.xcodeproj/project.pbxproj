@@ -12,6 +12,7 @@
 		5F3542942716002D007EEA75 /* chapter3exercice.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F3542932716002D007EEA75 /* chapter3exercice.c */; };
 		5F35429727160F43007EEA75 /* chapter4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F35429627160F43007EEA75 /* chapter4.c */; };
 		5F35429A27161B91007EEA75 /* chapter4exercice.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F35429927161B91007EEA75 /* chapter4exercice.c */; };
+		5F706F49281C0C0F00A7EB78 /* decimalConverter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F706F48281C0C0F00A7EB78 /* decimalConverter.c */; };
 		5FB244B3275E998F004586FB /* chapter7exercice.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FB244B2275E998F004586FB /* chapter7exercice.c */; };
 		5FB7D8F9271459EE004F0A12 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7D8F8271459EE004F0A12 /* main.c */; };
 		5FB7D90127145DE0004F0A12 /* chapter2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7D90027145DE0004F0A12 /* chapter2.c */; };
@@ -43,6 +44,8 @@
 		5F35429627160F43007EEA75 /* chapter4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapter4.c; sourceTree = "<group>"; };
 		5F35429827161B91007EEA75 /* chapter4exercice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter4exercice.h; sourceTree = "<group>"; };
 		5F35429927161B91007EEA75 /* chapter4exercice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapter4exercice.c; sourceTree = "<group>"; };
+		5F706F47281C0C0F00A7EB78 /* decimalConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decimalConverter.h; sourceTree = "<group>"; };
+		5F706F48281C0C0F00A7EB78 /* decimalConverter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = decimalConverter.c; sourceTree = "<group>"; };
 		5FB244B1275E998F004586FB /* chapter7exercice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter7exercice.h; sourceTree = "<group>"; };
 		5FB244B2275E998F004586FB /* chapter7exercice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapter7exercice.c; sourceTree = "<group>"; };
 		5FB7D8F5271459EE004F0A12 /* PlayingWithC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PlayingWithC; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,12 +74,22 @@
 		5F06FF3628100CB600D22329 /* Concept */ = {
 			isa = PBXGroup;
 			children = (
-				5F06FF3328100C9100D22329 /* arrays.h */,
-				5F06FF3428100C9100D22329 /* arrays.c */,
+				5F706F46281C08C100A7EB78 /* Arrays */,
 				5FC97087276A10DD0080F297 /* pointers.h */,
 				5FC97088276A10DD0080F297 /* pointers.c */,
 			);
 			path = Concept;
+			sourceTree = "<group>";
+		};
+		5F706F46281C08C100A7EB78 /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				5F06FF3328100C9100D22329 /* arrays.h */,
+				5F06FF3428100C9100D22329 /* arrays.c */,
+				5F706F47281C0C0F00A7EB78 /* decimalConverter.h */,
+				5F706F48281C0C0F00A7EB78 /* decimalConverter.c */,
+			);
+			path = Arrays;
 			sourceTree = "<group>";
 		};
 		5FB7D8EC271459EE004F0A12 = {
@@ -183,6 +196,7 @@
 				5F35429A27161B91007EEA75 /* chapter4exercice.c in Sources */,
 				5F336D0A280DD4B2008CADEF /* chapter9exercice.c in Sources */,
 				5FCE002F2808AB5500D56D92 /* chapter5exercice.c in Sources */,
+				5F706F49281C0C0F00A7EB78 /* decimalConverter.c in Sources */,
 				5F3542942716002D007EEA75 /* chapter3exercice.c in Sources */,
 				5FB7D90127145DE0004F0A12 /* chapter2.c in Sources */,
 				5FB244B3275E998F004586FB /* chapter7exercice.c in Sources */,

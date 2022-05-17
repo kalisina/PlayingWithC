@@ -16,6 +16,7 @@
 #include "chapter9exercice.h"
 #include "pointers.h"
 #include "arrays.h"
+#include "decimalConverter.h"
 
 void switchNumbers(int a, int b) {
     puts("switchNumbers");
@@ -69,6 +70,7 @@ int main(int argc, const char * argv[]) {
     //testingArray();
     //ratingCounters();
     //fibonacci();
-    primeNumbers();
+    //primeNumbers();
+    decimalToBinary();
     return 0;
 }
