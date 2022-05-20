@@ -11,5 +11,7 @@
 #include <stdio.h>
 
 void decimalToBinary(void);
+void decimalToHexadecimal(void);
+
 
 #endif /* decimalConverter_h */

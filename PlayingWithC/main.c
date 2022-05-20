@@ -71,6 +71,7 @@ int main(int argc, const char * argv[]) {
     //ratingCounters();
     //fibonacci();
     //primeNumbers();
-    decimalToBinary();
+    //decimalToBinary();
+    decimalToHexadecimal();
     return 0;
 }

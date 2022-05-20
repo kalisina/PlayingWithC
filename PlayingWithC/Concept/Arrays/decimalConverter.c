@@ -55,3 +55,61 @@ void decimalToBinary(void) {
     }
     printf(") \n");
 }
+
+void decimalToHexadecimal(void) {
+    unsigned int dividend = 2673443;
+    unsigned int divisor = 16;
+    unsigned int quotient;
+    unsigned int remainder;
+    
+    unsigned int remainders[100] = {0};
+    unsigned int remaindersIndex = 0;
+    unsigned int remaindersSize = 0;
+    
+    //char chars[6] = {'A', 'B', 'C', 'D', 'E', 'F'};
+    
+    unsigned int n = dividend;
+    
+    while (quotient != 0) {
+        quotient = n / divisor;
+        remainder = n % divisor;
+        
+        remainders[remaindersIndex] = remainder;
+        remaindersIndex++;
+        remaindersSize++;
+        n = quotient;
+        printf("quotient = %d \n", quotient);
+        printf("remainder = %d \n\n", remainder);
+    }
+    
+    printf("%d = ", dividend);
+    for (int i = remaindersSize - 1; i >= 0; i--) {
+        
+        switch (remainders[i]) {
+            case 10:
+                printf("A");
+                break;
+            case 11:
+                printf("B");
+                break;
+            case 12:
+                printf("C");
+                break;
+            case 13:
+                printf("D");
+                break;
+            case 14:
+                printf("E");
+                break;
+            case 15:
+                printf("F");
+                break;
+            default:
+                printf("%d", remainders[i]);
+        }
+        
+    }
+    printf("\n\n");
+}
+
+
