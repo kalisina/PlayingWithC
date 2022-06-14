@@ -72,7 +72,7 @@ int main(int argc, const char * argv[]) {
     //fibonacci();
     //primeNumbers();
     //decimalToBinary();
-    //decimalToHexadecimal();
-    decimalToAnyBase();
+    decimalToHexadecimal();
+    //decimalToAnyBase();
     return 0;
 }

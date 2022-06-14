@@ -57,59 +57,26 @@ void decimalToBinary(void) {
 }
 
 void decimalToHexadecimal(void) {
-    unsigned int dividend = 2673443;
-    unsigned int divisor = 16;
-    unsigned int quotient;
-    unsigned int remainder;
+    const char baseDigits[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+    long int numberToConvert;
+    int base = 16;
+    int convertedNumbers[64];
+    int nextDigit, index = 0;
     
-    unsigned int remainders[100] = {0};
-    unsigned int remaindersIndex = 0;
-    unsigned int remaindersSize = 0;
+    printf("Enter a number to convert: ");
+    scanf("%ld", &numberToConvert);
     
-    //char chars[6] = {'A', 'B', 'C', 'D', 'E', 'F'};
-    
-    unsigned int n = dividend;
-    
-    while (quotient != 0) {
-        quotient = n / divisor;
-        remainder = n % divisor;
-        
-        remainders[remaindersIndex] = remainder;
-        remaindersIndex++;
-        remaindersSize++;
-        n = quotient;
-        printf("quotient = %d \n", quotient);
-        printf("remainder = %d \n\n", remainder);
+    while (numberToConvert != 0) {
+        convertedNumbers[index] = numberToConvert % base;
+        numberToConvert = numberToConvert / base;
+        ++index;
     }
     
-    printf("%d = ", dividend);
-    for (int i = remaindersSize - 1; i >= 0; i--) {
-        
-        switch (remainders[i]) {
-            case 10:
-                printf("A");
-                break;
-            case 11:
-                printf("B");
-                break;
-            case 12:
-                printf("C");
-                break;
-            case 13:
-                printf("D");
-                break;
-            case 14:
-                printf("E");
-                break;
-            case 15:
-                printf("F");
-                break;
-            default:
-                printf("%d", remainders[i]);
-        }
-        
+    printf("converted number: ");
+    for (--index; index >= 0; --index) {
+        nextDigit = convertedNumbers[index];
+        printf("%c", baseDigits[nextDigit]);
     }
-    printf("\n\n");
 }
 
 void decimalToAnyBase(void){
@@ -135,6 +102,5 @@ void decimalToAnyBase(void){
         nextDigit = convertedNumber[index];
         printf("%c ", baseDigits[nextDigit]);
     }
-    printf("\n");
 }
 
