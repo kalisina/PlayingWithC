@@ -14,5 +14,4 @@ void decimalToBinary(void);
 void decimalToHexadecimal(void);
 void decimalToAnyBase(void);
 
-
 #endif /* decimalConverter_h */
