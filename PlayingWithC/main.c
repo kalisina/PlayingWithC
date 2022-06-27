@@ -17,6 +17,7 @@
 #include "pointers.h"
 #include "arrays.h"
 #include "decimalConverter.h"
+#include "strings.h"
 
 void switchNumbers(int a, int b) {
     puts("switchNumbers");
@@ -73,7 +74,17 @@ int main(int argc, const char * argv[]) {
     //primeNumbers();
     //decimalToBinary();
     //decimalToHexadecimal();
-    decimalToAnyBase();
+    //decimalToAnyBase();
+    
+    
+    const char s1[] = "Hello";
+    const char s2[] = "World";
+    char res[10];
+    concat(res, s1, 5, s2, 5);
+    for (int i = 0; i < 10; ++i) {
+        printf("%c", res[i]);
+    }
+    
     printf("\n");
     return 0;
 }
