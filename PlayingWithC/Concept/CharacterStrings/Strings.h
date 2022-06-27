@@ -9,8 +9,10 @@
 #define Strings_h
 
 #include <stdio.h>
+#include <stdbool.h>
 
 void concat(char result[], const char str1[], const char str2[]);
 int stringLength(const char str[]);
+bool equalStrings(const char str1[], const char str2[]);
 
 #endif /* Strings_h */

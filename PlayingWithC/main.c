@@ -6,6 +6,7 @@
 //
 
 #include <stdio.h>
+#include <stdbool.h>
 #include "chapter2.h"
 #include "chapter2exercice.h"
 #include "chapter3exercice.h"
@@ -76,19 +77,24 @@ int main(int argc, const char * argv[]) {
     //decimalToHexadecimal();
     //decimalToAnyBase();
     
-    //*
+    /*
     const char s1[] = "Life is ";
     const char s2[] = "Strange";
     char res[64];
     concat(res, s1, s2);
     printf("%s", res);
-    //*/
+    */
+    
     /*
     const char s1[] = "hello world\0";
     const char s2[] = "emal is an afghan\0";
     const char s3[] = "inception is my favourite film\0";
     printf("s1 count = %d / s2 count = %d / s3 count = %d ", stringLength(s1), stringLength(s2), stringLength(s3));
     */
+    
+    const char s1[] = "emal is ";
+    const char s2[] = "emal is";
+    printf("%s == %s? %i \n", s1, s2, equalStrings(s1, s2));
     
     printf("\n");
     return 0;
