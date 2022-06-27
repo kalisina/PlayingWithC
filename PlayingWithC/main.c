@@ -76,14 +76,19 @@ int main(int argc, const char * argv[]) {
     //decimalToHexadecimal();
     //decimalToAnyBase();
     
-    
-    const char s1[] = "Hello";
-    const char s2[] = "World";
-    char res[10];
-    concat(res, s1, 5, s2, 5);
-    for (int i = 0; i < 10; ++i) {
-        printf("%c", res[i]);
-    }
+    //*
+    const char s1[] = "Life is ";
+    const char s2[] = "Strange";
+    char res[64];
+    concat(res, s1, s2);
+    printf("%s", res);
+    //*/
+    /*
+    const char s1[] = "hello world\0";
+    const char s2[] = "emal is an afghan\0";
+    const char s3[] = "inception is my favourite film\0";
+    printf("s1 count = %d / s2 count = %d / s3 count = %d ", stringLength(s1), stringLength(s2), stringLength(s3));
+    */
     
     printf("\n");
     return 0;
