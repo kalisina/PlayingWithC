@@ -98,9 +98,15 @@ int main(int argc, const char * argv[]) {
     printf("%s == %s? %i \n", s1, s2, equalStrings(s1, s2));
     */
     
+    /*
     char line[128];
     readLine(line);
     printf("line = %s", line);
+    */
+
+    //printf("alphabetic = %i", alphabetic('a'));
+    const char s1[] = "emal  is    great man  123 *&^ beau goss   ";
+    printf("'%s' containes = %d words \n", s1, countWords(s1));
     
     printf("\n");
     return 0;

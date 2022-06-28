@@ -15,5 +15,7 @@ void concat(char result[], const char str1[], const char str2[]);
 int stringLength(const char str[]);
 bool equalStrings(const char str1[], const char str2[]);
 void readLine(char buffer[]);
+bool alphabetic(const char c);
+int countWords(const char str[]);
 
 #endif /* Strings_h */

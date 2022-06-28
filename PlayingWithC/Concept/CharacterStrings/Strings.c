@@ -56,3 +56,28 @@ void readLine(char buffer[]) {
     while( character != '\n' );
     buffer[i-1] = '\0';
 }
+
+bool alphabetic(const char c) {
+    if ( (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+int countWords(const char str[]) {
+    int i, wordCount = 0;
+    bool lookingForWord = true; //flag
+
+    for (i = 0; str[i] != '\0'; ++i) {
+        if (alphabetic(str[i])) {
+            if (lookingForWord) {
+                ++wordCount;
+                lookingForWord = false;
+            }
+        } else {
+            lookingForWord = true;
+        }
+    }
+    return wordCount;
+}
