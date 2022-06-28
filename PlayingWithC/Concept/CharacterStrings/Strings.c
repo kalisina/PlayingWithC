@@ -43,3 +43,16 @@ bool equalStrings(const char s1[], const char s2[]) {
     }
     return areEqual;
 }
+
+void readLine(char buffer[]) {
+    char character;
+    int i = 0;
+    puts("enter a sentence ");
+    do {
+        character = getchar();
+        buffer[i] = character;
+        ++i;
+    }
+    while( character != '\n' );
+    buffer[i-1] = '\0';
+}

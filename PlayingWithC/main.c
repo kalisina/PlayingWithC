@@ -92,9 +92,15 @@ int main(int argc, const char * argv[]) {
     printf("s1 count = %d / s2 count = %d / s3 count = %d ", stringLength(s1), stringLength(s2), stringLength(s3));
     */
     
+    /*
     const char s1[] = "emal is ";
     const char s2[] = "emal is";
     printf("%s == %s? %i \n", s1, s2, equalStrings(s1, s2));
+    */
+    
+    char line[128];
+    readLine(line);
+    printf("line = %s", line);
     
     printf("\n");
     return 0;
