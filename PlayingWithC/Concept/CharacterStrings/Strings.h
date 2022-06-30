@@ -18,5 +18,6 @@ bool equalStrings(const char str1[], const char str2[]);
 void readLine(char buffer[]);
 bool alphabetic(const char c);
 int countWords(const char str[]);
+void readLinesAndCountWords(void);
 
 #endif /* Strings_h */

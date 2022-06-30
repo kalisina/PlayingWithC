@@ -24,7 +24,7 @@ void stringsExample(void) {
     printf("s1 count = %d / s2 count = %d / s3 count = %d ", stringLength(s1), stringLength(s2), stringLength(s3));
     //*/
     
-    //*
+    /*
     const char s1[] = "emal is ";
     const char s2[] = "emal is";
     printf("'%s' == '%s?' %i \n", s1, s2, equalStrings(s1, s2));
@@ -40,6 +40,8 @@ void stringsExample(void) {
     const char s1[] = "Elvis Presely is the king of music";
     printf("'%s' containes = %d words \n", s1, countWords(s1));
     //*/
+
+    readLinesAndCountWords();
 }
 
 void concat(char result[], const char str1[], const char str2[]) {
@@ -115,4 +117,20 @@ int countWords(const char str[]) {
         }
     }
     return wordCount;
+}
+
+void readLinesAndCountWords(void) {
+    char text[64];
+    bool endOfText = false;
+    int totalWords = 0;
+
+    while (!endOfText) {
+        readLine(text);
+        if (text[0] == '\0') {
+            endOfText = true;
+        } else {
+            totalWords += countWords(text);
+        }
+    }
+    printf("total words = %d",totalWords);
 }
