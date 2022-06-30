@@ -7,6 +7,41 @@
 
 #include "Strings.h"
 
+void stringsExample(void) {
+    
+    /*
+    const char s1[] = "Life is ";
+    const char s2[] = "Strange";
+    char res[64];
+    concat(res, s1, s2);
+    printf("%s", res);
+    //*/
+    
+    /*
+    const char s1[] = "hello world\0";
+    const char s2[] = "emal is an afghan\0";
+    const char s3[] = "inception is my favourite film\0";
+    printf("s1 count = %d / s2 count = %d / s3 count = %d ", stringLength(s1), stringLength(s2), stringLength(s3));
+    //*/
+    
+    //*
+    const char s1[] = "emal is ";
+    const char s2[] = "emal is";
+    printf("'%s' == '%s?' %i \n", s1, s2, equalStrings(s1, s2));
+    //*/
+    
+    /*
+    char line[128];
+    readLine(line);
+    printf("line = %s", line);
+     //*/
+    
+    /*
+    const char s1[] = "Elvis Presely is the king of music";
+    printf("'%s' containes = %d words \n", s1, countWords(s1));
+    //*/
+}
+
 void concat(char result[], const char str1[], const char str2[]) {
     int i, j;
     for (i = 0; str1[i] != '\0'; ++i) {
