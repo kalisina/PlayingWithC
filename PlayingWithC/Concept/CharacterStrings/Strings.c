@@ -41,7 +41,19 @@ void stringsExample(void) {
     printf("'%s' containes = %d words \n", s1, countWords(s1));
     //*/
 
-    readLinesAndCountWords();
+    //readLinesAndCountWords();
+
+    Entry entry1 = {"astute", "able to understand a situation quickly and see how to take advantage of it"};
+    Entry entry2 = {"fathomless", "too deep to be measured"};
+    Entry entry3 = {"leeway", "extra time, space, materials, or the like, within which to operate; margin"};
+    Entry entry4 = {"perspire", "polite word for sweat"};
+    Entry entry5 = {"rejig", "organize differently"};
+    Entry entry6 = {"solace", "comfort or consolation in a time of distress or sadness"};
+
+    Entry dictionnary[6] = {entry1, entry2, entry3, entry4, entry5, entry6};
+    char search[] = "rejig";
+    int index = lookup(dictionnary, search, stringLength(search));
+    index > 0 ? printf("index of %s = %d", search, index) : printf("word not found!");
 }
 
 void concat(char result[], const char str1[], const char str2[]) {
@@ -61,7 +73,6 @@ void concat(char result[], const char str1[], const char str2[]) {
 int stringLength(const char str[]) {
     int count = 0;
     do {
-        printf("str[%d] = %c \n", count, str[count]);
         ++count;
     } while (str[count] != '\0');
     return count;
@@ -133,4 +144,14 @@ void readLinesAndCountWords(void) {
         }
     }
     printf("total words = %d",totalWords);
+}
+
+int lookup(const Entry dictionnary[], const char search[], const int dictionnaryCount) {
+    int i;
+    for (i = 0; i < dictionnaryCount; ++i) {
+        if (equalStrings(search, dictionnary[i].word)){
+            return i;
+        }
+    }
+    return -1;
 }

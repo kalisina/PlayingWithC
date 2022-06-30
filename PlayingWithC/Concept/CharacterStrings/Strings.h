@@ -11,6 +11,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+typedef struct entry_ { // underscore added on purpose
+    char word[16];
+    char definition[128];
+} Entry;
+
 void stringsExample(void);
 void concat(char result[], const char str1[], const char str2[]);
 int stringLength(const char str[]);
@@ -19,5 +24,6 @@ void readLine(char buffer[]);
 bool alphabetic(const char c);
 int countWords(const char str[]);
 void readLinesAndCountWords(void);
+int lookup(const Entry dictionnary[], const char search[], const int dictionnaryCount);
 
 #endif /* Strings_h */
