@@ -51,9 +51,9 @@ void stringsExample(void) {
     Entry entry6 = {"solace", "comfort or consolation in a time of distress or sadness"};
 
     Entry dictionnary[6] = {entry1, entry2, entry3, entry4, entry5, entry6};
-    char search[] = "rejig";
+    char search[] = "solace";
     int index = lookup(dictionnary, search, stringLength(search));
-    index > 0 ? printf("index of %s = %d", search, index) : printf("word not found!");
+    index > 0 ? printf("meaning of '%s':\n%s", search, dictionnary[index].definition) : printf("word not found!");
 }
 
 void concat(char result[], const char str1[], const char str2[]) {
