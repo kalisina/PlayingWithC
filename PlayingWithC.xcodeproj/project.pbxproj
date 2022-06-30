@@ -77,7 +77,7 @@
 		5F06FF3628100CB600D22329 /* Concept */ = {
 			isa = PBXGroup;
 			children = (
-				5F6F8D032860C8BE00F0E380 /* CharacterStrings */,
+				5F6F8D032860C8BE00F0E380 /* Strings */,
 				5F706F46281C08C100A7EB78 /* Arrays */,
 				5FC97087276A10DD0080F297 /* pointers.h */,
 				5FC97088276A10DD0080F297 /* pointers.c */,
@@ -85,13 +85,13 @@
 			path = Concept;
 			sourceTree = "<group>";
 		};
-		5F6F8D032860C8BE00F0E380 /* CharacterStrings */ = {
+		5F6F8D032860C8BE00F0E380 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
 				5F6F8D042860C8E800F0E380 /* Strings.h */,
 				5F6F8D052860C8E800F0E380 /* Strings.c */,
 			);
-			path = CharacterStrings;
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		5F706F46281C08C100A7EB78 /* Arrays */ = {
