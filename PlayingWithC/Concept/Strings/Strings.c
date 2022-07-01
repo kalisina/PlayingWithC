@@ -43,17 +43,22 @@ void stringsExample(void) {
 
     //readLinesAndCountWords();
 
-    Entry entry1 = {"astute", "able to understand a situation quickly and see how to take advantage of it"};
+    Entry entry0 = {"astute", "able to understand a situation quickly and see how to take advantage of it"};
+    Entry entry1 = {"eschew", "to avoid something intentionally, or to give something up"};
     Entry entry2 = {"fathomless", "too deep to be measured"};
-    Entry entry3 = {"leeway", "extra time, space, materials, or the like, within which to operate; margin"};
-    Entry entry4 = {"perspire", "polite word for sweat"};
-    Entry entry5 = {"rejig", "organize differently"};
-    Entry entry6 = {"solace", "comfort or consolation in a time of distress or sadness"};
+    Entry entry3 = {"imperious", "unpleasantly proud and expecting to be obeyed"};
+    Entry entry4 = {"leeway", "extra time, space, materials, or the like, within which to operate; margin"};
+    Entry entry5 = {"penultimate", "second from the last"};
+    Entry entry6 = {"perspire", "polite word for sweat"};
+    Entry entry7 = {"rejig", "organize differently"};
+    Entry entry8 = {"solace", "comfort or consolation in a time of distress or sadness"};
+    Entry entry9 = {"tiresome", "annoying and making you lose patience"};
 
-    Entry dictionnary[6] = {entry1, entry2, entry3, entry4, entry5, entry6};
-    char search[] = "solace";
-    int index = lookup(dictionnary, search, stringLength(search));
-    index > 0 ? printf("meaning of '%s':\n%s", search, dictionnary[index].definition) : printf("word not found!");
+    Entry dictionnary[10] = {entry0, entry1, entry2, entry3, entry4, entry5, entry6, entry7, entry8, entry9};
+    char search[] = "rejig";
+    int entries = 10; // number of words in the dic
+    int entry = lookup(dictionnary, search, entries);
+    (entry != -1) ? printf("meaning of '%s':\n%s", search, dictionnary[entry].definition) : printf("word not found!\n");
 }
 
 void concat(char result[], const char str1[], const char str2[]) {
@@ -146,12 +151,52 @@ void readLinesAndCountWords(void) {
     printf("total words = %d",totalWords);
 }
 
-int lookup(const Entry dictionnary[], const char search[], const int dictionnaryCount) {
+int lookup(const Entry dictionnary[], const char search[], const int entries) {
+    /*
     int i;
     for (i = 0; i < dictionnaryCount; ++i) {
         if (equalStrings(search, dictionnary[i].word)){
             return i;
         }
     }
-    return -1;
+     */
+    int low = 0;
+    int high = entries -1;
+    int mid, result;
+
+    while (low <= high) {
+        mid = (low + high) / 2;
+        printf("mid = %d\n", mid);
+        result = compareSrings(dictionnary[mid].word, search);
+
+        if (result == -1) {
+            low = mid + 1;
+        } else if (result == 1) {
+            high = mid - 1;
+        } else {
+            return mid; // word found
+        }
+    }
+    return -1; // word not found
+}
+
+int compareSrings(const char str1[], const char str2[]) {
+    int i = 0, answer;
+
+    while (str1[i] == str2[i] && str1[i] != '\0' && str2[i] != '\0') {
+        printf("here\n");
+        ++i;
+    }
+
+    if (str1[i] < str2[i]) {
+        printf("str1[i] < str2[i]\n");
+        answer = -1;
+    } else if (str1[i] == str2[i]) {
+        printf("str1[i] == str2[i]\n");
+        answer = -0;
+    } else {
+        printf("str1[i] > str2[i]\n");
+        answer = 1; //str1[i] > str2[i]
+    }
+    return answer;
 }

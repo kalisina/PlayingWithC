@@ -24,6 +24,7 @@ void readLine(char buffer[]);
 bool alphabetic(const char c);
 int countWords(const char str[]);
 void readLinesAndCountWords(void);
-int lookup(const Entry dictionnary[], const char search[], const int dictionnaryCount);
+int lookup(const Entry dictionnary[], const char search[], const int entries);
+int compareSrings(const char str1[], const char str2[]);
 
 #endif /* Strings_h */
