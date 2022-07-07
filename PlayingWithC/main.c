@@ -15,11 +15,10 @@
 #include "chapter5exercice.h"
 #include "chapter7exercice.h"
 #include "chapter9exercice.h"
-#include "pointers.h"
-#include "arrays.h"
-#include "decimalConverter.h"
-#include "strings.h"
-
+#include "Concept/pointers.h"
+#include "Concept/Arrays/arrays.h"
+#include "Concept/Arrays/decimalConverter.h"
+#include "Concept/Strings/Strings.h"
 
 void switchNumbers(int a, int b) {
     puts("switchNumbers");
