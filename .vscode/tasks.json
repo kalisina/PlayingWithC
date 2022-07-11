@@ -12,7 +12,7 @@
                 "${workspaceFolder}/PlayingWithC/Concept/Arrays/*.c",
                 "${workspaceFolder}/PlayingWithC/Concept/Strings/*.c",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"                
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${fileDirname}"
