@@ -15,6 +15,7 @@
 #include "chapter5exercice.h"
 #include "chapter7exercice.h"
 #include "chapter9exercice.h"
+#include "chapter11.h"
 #include "Concept/pointers.h"
 #include "Concept/Arrays/arrays.h"
 #include "Concept/Arrays/decimalConverter.h"
@@ -77,7 +78,8 @@ int main(int argc, const char * argv[]) {
     //decimalToHexadecimal();
     //decimalToAnyBase();
     
-    stringsExample();
+    //stringsExample();
+    simplePointers();
     
     printf("\n");
     return 0;
